@@ -17,7 +17,7 @@ podTemplate(
     node('mypod') {
         stage('Clone repository') {
             container('git') {
-                sh 'git clone -b master https://github.com/alicek106/kubernetes-python-sdk-example.git /etc/gitrepo'
+                sh 'git clone -b master https://github.com/Woongjae-YOU/kubernetes-python-sdk-example.git /etc/gitrepo'
             }
         }
         stage('Test source codes') {
