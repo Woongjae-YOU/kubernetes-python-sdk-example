@@ -30,7 +30,7 @@ podTemplate(
         stage('Build and push docker image'){
             container('docker') {
                 sh 'docker login -u ywjcd90 -p $DOCKER_HUB_PASSWORD'
-                sh 'docker build /etc/gitrepo/ -t Woongjae-YOU/kubernetes-python-sdk-example --no-cache'
+                sh 'docker build /etc/gitrepo/ -t ywjcd90/kubernetes-python-sdk-example --no-cache'
                 sh 'docker push ywjcd90/kubernetes-python-sdk-example'
             }
         }
