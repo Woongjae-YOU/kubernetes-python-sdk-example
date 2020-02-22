@@ -29,9 +29,9 @@ podTemplate(
         }
         stage('Build and push docker image'){
             container('docker') {
-                sh 'docker login -ualicek106 -p$DOCKER_HUB_PASSWORD'
-                sh 'docker build /etc/gitrepo/ -t alicek106/kubernetes-python-sdk-example --no-cache'
-                sh 'docker push alicek106/kubernetes-python-sdk-example'
+                sh 'docker login -uywjcd90 -p$DOCKER_HUB_PASSWORD'
+                sh 'docker build /etc/gitrepo/ -t Woongjae-YOU/kubernetes-python-sdk-example --no-cache'
+                sh 'docker push ywjcd90/kubernetes-python-sdk-example'
             }
         }
     }
